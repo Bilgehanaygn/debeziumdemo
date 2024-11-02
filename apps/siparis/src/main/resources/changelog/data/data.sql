@@ -5,7 +5,7 @@ INSERT INTO "urun" (id, isim, fiyat) VALUES
     (gen_random_uuid(), 'Headphones', 199.99),
     (gen_random_uuid(), 'Monitor', 299.99);
 
-INSERT INTO "siparis" (id, toplamFiyat, musteriId) VALUES
+INSERT INTO "siparis" (id, toplam_fiyat, musteri_id) VALUES
     (gen_random_uuid(), 2199.99, gen_random_uuid()),
     (gen_random_uuid(), 799.50, gen_random_uuid()),
     (gen_random_uuid(), 499.99, gen_random_uuid()),

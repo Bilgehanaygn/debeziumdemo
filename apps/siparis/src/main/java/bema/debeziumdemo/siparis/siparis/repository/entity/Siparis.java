@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 
@@ -22,6 +23,9 @@ public class Siparis {
   @Column(name = "id")
   private UUID id;
 
-  private UUID siparisId;
+  @Column(name = "toplam_fiyat")
+  private BigDecimal toplamFiyat;
+
+  @Column(name = "musteri_id")
   private UUID musteriId;
 }

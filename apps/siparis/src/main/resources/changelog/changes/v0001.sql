@@ -6,8 +6,8 @@ CREATE TABLE "urun" (
 
 CREATE TABLE "siparis" (
     id UUID NOT NULL PRIMARY KEY,
-    toplamFiyat DECIMAL NOT NULL,
-    musteriId UUID NOT NULL
+    toplam_fiyat DECIMAL NOT NULL,
+    musteri_id UUID NOT NULL
 );
 
 ALTER TABLE databasechangelog REPLICA IDENTITY FULL;
