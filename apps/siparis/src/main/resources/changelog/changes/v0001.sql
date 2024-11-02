@@ -1,0 +1,13 @@
+CREATE TABLE "urun" (
+    id UUID NOT NULL PRIMARY KEY,
+    isim VARCHAR(20) NOT NULL,
+    fiyat DECIMAL NOT NULL
+);
+
+CREATE TABLE "siparis" (
+    id UUID NOT NULL PRIMARY KEY,
+    toplamFiyat DECIMAL NOT NULL,
+    musteriId UUID NOT NULL
+);
+
+ALTER TABLE databasechangelog REPLICA IDENTITY FULL;

@@ -1,0 +1,5 @@
+rootProject.name = 'debeziumdemo'
+include 'apps:siparis'
+include 'apps:odeme'
+
+
